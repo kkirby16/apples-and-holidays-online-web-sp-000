@@ -92,6 +92,7 @@ def all_holidays_with_bbq(holiday_hash)
      holiday_info.each do |holiday, supplies| 
        if supplies.any? {|supply| supply == "BBQ"} 
          holidays_with_bbq << holiday
+         binding.pry
        end
      end
    end
